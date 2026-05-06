@@ -1,0 +1,12 @@
+---
+const { color, title } = Astro.props
+
+const classes1 = ["border-1", "rounded-xl", "shadow-xl", "shadow-"+color+"-500/30", "flex", "flex-col", "items-center", "border-"+color+"-500", "p-10", "m-10"]
+
+const classes2 = ["text-"+color+"-500", "border-b-1", "border-"+color+"-500"]
+
+---
+<div class:list={classes1}>
+    <h2 class:list={classes2}>{title}</h2>
+    <slot/>
+</div>
