@@ -1,17 +1,23 @@
 ---
-
+import '../styles/global.css'
+import Base from '../components/base.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base>
+    <div class="flex flex-col md:flex-row p-10 text-indigo-400">
+        <div class="border-1 rounded-xl shadow-xl shadow-indigo-500/30 flex flex-col text-center items-center border-indigo-500 p-10">
+            <img src="https://avatars.githubusercontent.com/u/6076998?v=4" class="rounded-full size-30"/>
+            <h2 class="mt-5">Andreas Røste</h2>
+        </div>
+        <div class="block m-5"></div>
+        <div class="grow border-1 rounded-xl shadow-xl shadow-indigo-500/30 flex flex-col border-indigo-500 p-10">
+            Velkommen! På denne siden kan du se at jeg leker meg med Astro og Tailwind. Helt AI-fritt.<br/><br/>
+        </div>
+    </div>
+
+    <div class="border-1 rounded-xl shadow-xl shadow-cyan-500/30 flex flex-col items-center border-cyan-500 p-10 m-10">
+        <h2 class="text-cyan-500 border-b-1 border-cyan-500">Unokalkulator</h2>
+        <a href="https://uno.a5s.no" class="text-cyan-200 p-5 border-1 border-cyan-500 rounded-xl mt-5 bg-cyan-700 hover:bg-cyan-900">https://uno.a5s.no</a>
+    </div>
+
+</Base/>

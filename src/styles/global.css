@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    line-height:1;
+}
+h2 {
+    font-size: 2em;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header {
+    color: #ccc;
+    padding: 20px 50px;
+    justify-content: space-around;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    width: 100%;
+}
+
+.header > h1 {
+    flex: 1;
+}
+
+.header > a {
+    margin: 0 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: #ccc;
+}
+.header > a:hover {
+    color: #fff;
+}
+
+.header > p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        border-bottom: 3px solid white;
+    }
+    .header > a, .header > p {
+        margin-top: 20px;
+    }
+}
+
+.hero, .content {
+    display: flex;
+    background: rgba(255,255,255,0.6);
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content-header {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted black;
+}
+
+.cta {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    background: #36CBC3;
+}
+.cta:hover {
+    color: #ccc;
+    background: #000;
+}
+
+.status-ok {
+    text-transform: uppercase;
+    font-size: 0.6em;
+    border: 1px solid #ccc;
+    line-height: 1;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.status-ok:before {
+    content: '⬤ ';
+    color: green;
+}
+
